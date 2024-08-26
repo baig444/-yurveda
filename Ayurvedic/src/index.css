@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link:hover {
+    color: rgb(180, 197, 213);
+    transition: all 0.3s;
+  }
+
+.About{
+  background-image: url("https://corehealthandwellness.in/wp-content/uploads/2024/07/Screenshot-2024-07-26-at-4.15.25%E2%80%AFPM.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Explore{
+  background-image: url('https://corehealthandwellness.in/wp-content/uploads/2020/02/h10_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+}
+
+/* This will hide the scrollbar globally */
+::-webkit-scrollbar {
+  display: none;
+
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
