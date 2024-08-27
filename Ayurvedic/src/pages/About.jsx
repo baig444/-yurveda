@@ -75,9 +75,7 @@ const About = () => {
             <h1 className="text-lg font-bold">Customer-Centric Approach</h1>
             <p className="text-xs w-[80%]">
               At Core Health and Wellness, your well-being is our top priority.
-              We offer personalized support and resources to help you on your
-              health journey, and we are committed to providing exceptional
-              customer service every step of the way.
+              We offer personalized support and resources to help you on your wealth journey
             </p>
           </div>
         </div>
