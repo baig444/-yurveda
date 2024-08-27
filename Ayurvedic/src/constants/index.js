@@ -103,4 +103,15 @@ const saman = [
 
 ]
 
-export {images,certificates,saman}
+const  navLinks = [
+  { name: 'Home', link: '/' },
+  { name: 'About', link: '/about' },
+  { name: 'Shop', link: '/shop' },
+  { name: 'Testimonials', link: '/testimonials' },
+  { name: 'Gallery', link: '/gallery' },
+  { name: 'My Account', link: '/register' },
+  { name: 'Contact', link: '/contact' },
+];
+
+
+export {images,certificates,saman,navLinks}

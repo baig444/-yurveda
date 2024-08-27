@@ -1,0 +1,25 @@
+  useEffect(() => {
+    var circle = document.querySelector(".circle");
+    var links = document.querySelectorAll(".nav-link");
+    document.addEventListener("mousemove", function(dets){
+      gsap.to(circle,{
+        left:dets.x,
+        top:dets.y
+    })
+    });
+
+    links.forEach(link => {
+      link.addEventListener("mouseenter", () => {
+        gsap.to(circle, {
+          scale: 2
+        })
+      })
+      link.addEventListener("mouseleave", () => {
+        gsap.to(circle, {
+          scale: 1
+        })
+      })
+    })
+
+  
+  }, []);

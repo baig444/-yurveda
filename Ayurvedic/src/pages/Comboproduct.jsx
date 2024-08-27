@@ -6,12 +6,12 @@ import { CartContext } from "../Context/ProductContext.jsx";
 const Comboproduct = () => {
   const { addToCart, activeCart, setActiveCart } = useContext(CartContext);
   return (
-    <div className="h-[100vh] w-full p-10">
+    <div className="min-h-screen w-full p-10">
       <div className=" h-[20vh] w-full flex flex-col items-center text-gray-700">
         <h1 className="text-4xl font-extrabold">Featured Products</h1>
         <p className="text-xs">Visit our shop to see amazing products</p>
       </div>
-      <div className="h-[80vh] flex justify-evenly w-full">
+      <div className="h-fit flex justify-evenly flex-wrap w-full">
         {saman.map((product) => (
           <div
             key={product.id}
