@@ -35,6 +35,7 @@ export function Checkout() {
                             type="text"
                             placeholder="Enter your name"
                             id="name"
+                            required
                           ></input>
                         </div>
                       </div>
@@ -54,6 +55,7 @@ export function Checkout() {
                                 type="tel"
                                 placeholder="+91 1234567890"
                                 id="phone"
+                                required
                               ></input>
                             </div>
                           </div>
@@ -70,6 +72,7 @@ export function Checkout() {
                                 type="email"
                                 placeholder="Enter your email"
                                 id="email"
+                                required
                               ></input>
                             </div>
                           </div>
@@ -96,6 +99,7 @@ export function Checkout() {
                                 name="address"
                                 autoComplete="street-address"
                                 className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                required
                               />
                             </div>
                           </div>
@@ -112,6 +116,7 @@ export function Checkout() {
                                 type="text"
                                 id="city"
                                 name="city"
+                                required
                                 autoComplete="address-level2"
                                 className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                               />
@@ -128,6 +133,7 @@ export function Checkout() {
                             <div className="mt-1">
                               <input
                                 type="text"
+                                required
                                 id="region"
                                 name="region"
                                 autoComplete="address-level1"
@@ -146,6 +152,7 @@ export function Checkout() {
                             <div className="mt-1">
                               <input
                                 type="text"
+                                required
                                 id="postal-code"
                                 name="postal-code"
                                 autoComplete="postal-code"
