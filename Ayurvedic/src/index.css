@@ -46,3 +46,9 @@ body {
   transition: all cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 2;
 }
+
+@media (min-width: 800px) and (max-width: 1017px) {
+  .hide-mobile-nav {
+    display: none;
+  }
+}

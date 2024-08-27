@@ -85,7 +85,7 @@ const Navbar = () => {
           </div>
          <div className="lg:hidden">
          <Sheet>
-            <SheetTrigger><FaBars size={26} className='text-yellow-500' /></SheetTrigger>
+            <SheetTrigger><FaBars size={26} className='hide-mobile-nav text-yellow-500' /></SheetTrigger>
             <SheetContent>
               <SheetHeader>
                 <SheetTitle className='flex flex-col gap-10 p-4'>
