@@ -4,7 +4,7 @@ import { saman } from "../constants/index";
 
 const Deals = () => {
   return (
-    <div className="min-h-[90vh] w-full p-10">
+    <div className="w-full p-10">
       <div className="h-[20vh] w-full flex flex-col items-center text-gray-700 mb-6">
         <h1 className="text-4xl font-extrabold">Deals of the Day</h1>
         <p className="text-xs">Visit our shop to see amazing products</p>

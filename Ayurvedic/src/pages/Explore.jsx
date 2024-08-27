@@ -1,7 +1,7 @@
 const Explore = () => {
   return (
     <div className="Explore">
-      <div className="h-fit relative w-full flex flex-col items-center p-5">
+      <div className="min-h-[50vh] relative w-full flex flex-col items-center p-5">
         <h1 className="text-xl font-bold">Core Health</h1>
         <p className="text-lg font-semibold">Innovative Products packed By Science</p>
         <h1 className="text-sm w-[50%] text-center">Our Products combine traditional wisdom with modern science to deliver the best possible solutions. ensuring your well-being. Experience Core Health with us now. </h1>
