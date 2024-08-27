@@ -3,6 +3,8 @@ import { navLinks } from "../constants/index";
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../Context/ProductContext";
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
+import { FaBars } from "react-icons/fa6";
+
 import {
   Sheet,
   SheetContent,
@@ -83,7 +85,7 @@ const Navbar = () => {
           </div>
          <div className="lg:hidden">
          <Sheet>
-            <SheetTrigger>Open</SheetTrigger>
+            <SheetTrigger><FaBars size={26} className='text-yellow-500' /></SheetTrigger>
             <SheetContent>
               <SheetHeader>
                 <SheetTitle className='flex flex-col gap-10 p-4'>
