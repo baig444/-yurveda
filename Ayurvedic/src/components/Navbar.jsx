@@ -55,7 +55,7 @@ const Navbar = () => {
       }`}
     >
       <div>
-        <h1 className="text-lg font-[Ristica] font-bold">HEALTHIX</h1>
+        <img src="/Logo copy.png" alt="" className="h-12" />
       </div>
       <div className="hidden md:flex lg:flex gap-8">
         {navLinks.map((link) => (
