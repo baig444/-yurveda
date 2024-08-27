@@ -70,45 +70,7 @@ export default function ProductDetail() {
               </span>
             </div>
           </div>
-          <div className="border-b border-gray-300 pb-3  ">
-            <div className="mb-4">
-              <h3 className="text-heading mb-2.5 text-base font-semibold capitalize md:text-lg">
-                size
-              </h3>
-              <ul className="colors -mr-3 flex flex-wrap">
-                {["S", "M", "L", "XL"].map((size) => (
-                  <li
-                    key={size}
-                    className="text-heading mb-2 mr-2 flex h-9 w-9 cursor-pointer items-center justify-center rounded border border-gray-100 p-1 text-xs font-semibold uppercase transition duration-200 ease-in-out hover:border-black md:mb-3 md:mr-3 md:h-11 md:w-11 md:text-sm "
-                  >
-                    {size}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="mb-4 ">
-              <h3 className="text-heading mb-2.5 text-base font-semibold capitalize md:text-lg">
-                color
-              </h3>
-              <ul className="colors -mr-3 flex flex-wrap">
-                {[
-                  "bg-orange-400",
-                  "bg-pink-400",
-                  "bg-violet-600",
-                  "bg-red-500",
-                ].map((color) => (
-                  <li
-                    key={color}
-                    className="text-heading mb-2 mr-2 flex h-9 w-9 cursor-pointer items-center justify-center rounded border border-gray-100 p-1 text-xs font-semibold uppercase transition duration-200 ease-in-out hover:border-black md:mb-3 md:mr-3 md:h-11 md:w-11 md:text-sm"
-                  >
-                    <span
-                      className={`block h-full w-full rounded ${color}`}
-                    />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+      
           <div className="space-s-4 3xl:pr-48 flex items-center gap-2 border-b border-gray-300 py-8  md:pr-32 lg:pr-12 2xl:pr-32">
             <div className="group flex h-11 flex-shrink-0 items-center justify-between overflow-hidden rounded-md border border-gray-300 md:h-12">
               <button
@@ -131,38 +93,6 @@ export default function ProductDetail() {
             >
               Add to cart
             </button>
-          </div>
-          <div className="py-6 ">
-            <ul className="space-y-5 pb-1 text-sm">
-              <li>
-                <span className="text-heading inline-block pr-2 font-semibold">
-                  SKU:
-                </span>
-                N/A
-              </li>
-              <li>
-                <span className="text-heading inline-block pr-2 font-semibold">
-                  Category:
-                </span>
-                <a
-                  className="hover:text-heading transition hover:underline"
-                  href="#"
-                >
-                  kids
-                </a>
-              </li>
-              <li className="productTags">
-                <span className="text-heading inline-block pr-2 font-semibold">
-                  Tags:
-                </span>
-                <a
-                  className="hover:text-heading inline-block pr-1.5 transition last:pr-0 hover:underline"
-                  href="#"
-                >
-                  Sneakers
-                </a>
-              </li>
-            </ul>
           </div>
           <div className="shadow-sm ">
             <header className="flex cursor-pointer items-center justify-between border-t border-gray-300 py-5 transition-colors md:py-6">
