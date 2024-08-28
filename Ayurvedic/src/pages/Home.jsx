@@ -5,7 +5,6 @@ import Deals from "../pages/Deals";
 import Comboproduct from "./Comboproduct";
 import Explore from "./Explore";
 import Testimonials from "./Testimonials";
-import Cart from "../components/Cart";
 const Home = () => {
   return (
     <main className="min-h-full w-full">
@@ -38,7 +37,6 @@ const Home = () => {
       <Explore/>
       <Testimonials/>
       <DeliveryPartner/>
-      <Cart/>
     </main>
   );
 };

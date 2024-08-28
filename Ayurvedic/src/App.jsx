@@ -10,6 +10,7 @@ import { CartPage } from "./pages/CartPage";
 import ProductDetail from "./pages/ProductDetail";
 import { Checkout } from "./pages/Checkout";
 import OrderConfirm from "./pages/OrderConfirm";
+import Cart from "./components/Cart";
 // import LocomotiveScroll from 'locomotive-scroll';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
   return (
     <div className="w-full pt-16">
       {/* <div className="circle"></div> */}
+      <Cart/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Home />} />

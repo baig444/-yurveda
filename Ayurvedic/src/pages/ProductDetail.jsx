@@ -13,7 +13,7 @@ export default function ProductDetail() {
   }
 
   return (
-    <div className="mx-auto max-w-7xl px-4 md:px-8 2xl:px-16">
+    <div className="mx-auto max-w-7xl px-4 md:px-8 2xl:px-16 z-0">
       <div className="pt-8">
         <div className="flex items-center">
           <ol className="flex w-full items-center overflow-hidden">
