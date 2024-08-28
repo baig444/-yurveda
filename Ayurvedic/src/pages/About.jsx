@@ -1,82 +1,129 @@
-import { GrStatusGood } from "react-icons/gr";
-import { GiMaterialsScience } from "react-icons/gi";
-import { IoChatbubbleOutline } from "react-icons/io5";
-
 const About = () => {
   return (
-    <section>
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-        <div className="max-w-3xl">
-          <h2 className="text-3xl font-bold sm:text-4xl">Our Story</h2>
-        </div>
-
-        <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
-            <img
-              alt=""
-              src="https://corehealthandwellness.in/wp-content/uploads/2024/07/900-2.jpg"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-
-          <div className="lg:py-16">
-            <article className="space-y-4 text-gray-600">
-              <p>
-                At Core Health and Wellness, our journey began with a simple
-                belief: that everyone deserves access to high-quality, effective
-                health and wellness products. Founded by a team of health
-                enthusiasts and experts, we have dedicated ourselves to creating
-                solutions that support and enhance your well-being. Our passion
-                for holistic health and our commitment to innovation have driven
-                us to develop a range of products that blend traditional wisdom
-                with modern science.
-              </p>
-
-              <h1 className="text-4xl text-black">Who We Are </h1>
-              <p>
-                Core Health and Wellness is a trusted name in the health
-                industry, known for our dedication to quality and excellence.
-                Our team is composed of experienced professionals in the fields
-                of nutrition, fitness, and wellness, all working together to
-                bring you products that are not only effective but also safe and
-                natural. We are passionate about helping you live a healthier,
-                happier life, and we take pride in being your partner on this
-                journey.
-              </p>
-            </article>
+    <section className="w-full ">
+      <div className="pt-10">
+        <div className="Aboutus p-20">
+          <div className="lg:w-[50%] bg-white p-10 rounded-lg">
+            <h1 className="lg:text-5xl lg:mb-5">Our Strategy</h1>
+            <h3>
+              We’re on course to transform the practice of medicine through
+              breakthrough science and make a positive impact on our people and
+              the communities we serve.
+            </h3>
           </div>
         </div>
-      </div>
-      <div className="mx-auto max-w-screen-xl px-4 py-16 bg-gray-200  sm:px-6 sm:py-24 lg:px-8">
-        <h1 className="text-3xl font-bold mb-5">Why Choose Us</h1>
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 px-8">
-          <div className="h-60 flex flex-col gap-2 rounded-lg p-8 bg-white">
-            <GrStatusGood size={40} />
-            <h1 className="text-lg font-bold">Quality & Purity</h1>
-            <p className="text-xs w-[80%]">
-              Our products are made with the highest quality natural
-              ingredients, ensuring purity and effectiveness. We prioritize
-              transparency in our formulations, so you know exactly what you’re
-              putting into your body.
-            </p>
+        <div className="w-full min-h-screen mt-20 flex flex-col gap-60">
+          <div className="lg:flex items-center justify-around">
+            <div className="h-fit lg:w-[45%]">
+              <img
+                src="https://images.unsplash.com/photo-1609188076864-c35269136b09?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="image"
+                className="rounded-lg"
+              />
+            </div>
+            <div className="h-[50vh] lg:w-[40%] px-5">
+              <h1 className="text-5xl lg:mb-4">The Voices Behind Our Purpose</h1>
+              <p>
+                We chase the miracles of science to improve people’s lives, and
+                sometimes that means starting over with Plan B, Plan C, or even
+                Plan Z. This film brings together the inner thoughts and
+                ambitions of the people at Sanofi, who find inspiration from
+                loved ones, motivation from families, and a united strength to
+                push harder until we turn a corner.
+              </p>
+            </div>
           </div>
-          <div className="h-60 flex flex-col gap-2 rounded-lg bg-white p-8">
-            <GiMaterialsScience size={40} />
-
-            <h1 className="text-lg font-bold">Science-Backed Formulations</h1>
-            <p className="text-xs w-[80%]">
-              We combine traditional wisdom with modern scientific research to
-              create innovative products that support your health and wellness
-              goals.
-            </p>
+          <div className="lg:flex items-center justify-around">
+            <div className="h-fit lg:w-[40%] px-5">
+              <h1 className="text-5xl mb-4">
+                Transforming The Practice of Medicine
+              </h1>
+              <p>
+                Prioritization and focus are helping us unlock and maximize the
+                potential of key medicines, vaccines, and self-care solutions
+                for people, across our global business units: Specialty Care,
+                <span>
+                  Vaccines, General Medicines, and Consumer Healthcare. We aim
+                  to become a leading company in immunology and positively
+                  impact millions of patients suffering from dermatological,
+                  respiratory, gastroenterological, and other immune-mediated
+                  diseases. a
+                </span>
+                We earn every day our leadership in prevention by protecting
+                half a billion people worldwide every year with our portfolio of
+                vaccines and by leveraging our broad set of technology and
+                manufacturing platforms, including in mRNA.
+              </p>
+            </div>
+            <div className="h-[50vh] lg:w-[45%] px-5">
+              <img
+                src="https://www.sanofi.com/optim/dotcom/pages/images/our-company/our-strategy/transforming-the-practice-of-medicine_20230505132637.jpg?size=large"
+                alt="image"
+                className="rounded-lg"
+              />
+            </div>
           </div>
-          <div className="h-60 flex flex-col gap-2 rounded-lg bg-white p-8">
-            <IoChatbubbleOutline size={40} />
-            <h1 className="text-lg font-bold">Customer-Centric Approach</h1>
-            <p className="text-xs w-[80%]">
-              At Core Health and Wellness, your well-being is our top priority.
-              We offer personalized support and resources to help you on your wealth journey
-            </p>
+          <div className="lg:flex items-center justify-around">
+            <div className="h-fit lg:w-[45%] px-5">
+              <img
+                src="https://www.sanofi.com/optim/dotcom/pages/images/our-company/our-strategy/advancing-breakthrough-science2_20230505133020.jpg?size=large"
+                alt="image"
+                className="rounded-lg"
+              />
+            </div>
+            <div className="h-[50vh] lg:w-[40%] px-5">
+              <h1 className="text-5xl mb-4">Advancing Breakthrough Science</h1>
+              <p>
+                We’re strengthening our pipeline with a steady stream of
+                potentially transformative therapies that could shift paradigms
+                in treatment and prevention for people across the world. We have
+                a powerful toolbox of drug discovery platforms that allow us to
+                break scientific ground in six therapeutic areas: Immunology and
+                Inflammation, Oncology, Rare Diseases, Rare Blood Disorders,
+                Neurology and Vaccines.
+              </p>
+            </div>
+          </div>
+          <div className="lg:flex items-center justify-around">
+            <div className="h-fit lg:w-[40%] px-5">
+              <h1 className="text-5xl mb-4">Driving Social Impact</h1>
+              <p>
+                The challenges facing society and the planet are becoming
+                increasingly more complex. Shifting demographics, persistent
+                inequalities in access to healthcare, and accelerating threats
+                from climate change have motivated us to expand our commitments
+                to society. Our social impact strategy is differentiated from
+                our peers, multi-faceted and embedded at all levels of our
+                organization. We aim to have a transformative and sustainable
+                impact on the health and well-being of people, vulnerable
+                communities, our employees, and the planet.
+              </p>
+            </div>
+            <div className="h-fit lg:w-[45%] px-5">
+              <img
+                src="https://www.sanofi.com/optim/dotcom/pages/images/our-company/our-strategy/social-impact-banner_20230620144505.jpg?size=large"
+                alt="image"
+                className="rounded-lg"
+              />
+            </div>
+          </div>
+          <div className="lg:flex items-center justify-around">
+            <div className="h-[50vh] lg:w-[45%] px-5">
+              <img
+                src="https://www.sanofi.com/optim/dotcom/pages/images/our-company/our-strategy/raimunda-rosario_20230502123405.jpg?size=large"
+                alt="image"
+                className="rounded-lg"
+              />
+            </div>
+            <div className="h-fit lg:w-[40%] mb-16 px-5">
+              <h1 className="text-5xl mb-4">Going “All in” For Diversity, Equity and Inclusion</h1>
+              <p>
+              We’re taking steps to build representative leadership and creating a work environment where people can bring their best and whole selves.  
+              </p>
+              <p>
+              Beyond the workplace, we’re advancing further diversity in our clinical trials, and with our suppliers. Our Diversity, Equity and Inclusion Board composed of external thought leaders and Executives ensures we stay true to our long-term commitments in this area.  
+              </p>
+            </div>
           </div>
         </div>
       </div>

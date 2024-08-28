@@ -16,7 +16,7 @@ import Cart from "./components/Cart";
 const App = () => {
   // const scroll = new LocomotiveScroll()
   return (
-    <div className="w-full pt-16">
+    <div className="w-full pt-10">
       {/* <div className="circle"></div> */}
       <Cart/>
       <Routes>

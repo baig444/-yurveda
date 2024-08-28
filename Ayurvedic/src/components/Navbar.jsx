@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants/index";
-import { useContext, useEffect, useState } from "react";
-import { CartContext } from "../Context/ProductContext";
-import { CiHeart, CiShoppingCart } from "react-icons/ci";
 import { FaBars } from "react-icons/fa6";
 
 import {
@@ -12,9 +9,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../components/ui/sheet";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const { cart, activeCart, setActiveCart, total } = useContext(CartContext);
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
@@ -50,7 +47,7 @@ const Navbar = () => {
     // </nav>
 
     <nav
-      className={`fixed top-0 flex md:flex lg:flex h-16 transition-transform duration-300 ease-in-out  w-full backdrop-blur-md   items-center justify-between gap-5 px-10 p-2 ${
+      className={`fixed top-0 flex md:flex lg:flex h-16 transition-transform duration-300 z-50 ease-in-out  w-full backdrop-blur-md   items-center justify-between gap-5 px-10 p-2 ${
         scrollDirection === "down" ? "translate-y-[-100%]" : "translate-y-0"
       }`}
     >
@@ -60,7 +57,6 @@ const Navbar = () => {
       <div className="hidden md:flex lg:flex gap-8">
         {navLinks.map((link) => (
           <Link key={link.link} to={link.link} className="nav-link font-bold flex items-center gap-2">
-            <img src={link.icon} alt="icon" className="w-5 h-5" />
             {link.name}
             
           </Link>
@@ -68,23 +64,6 @@ const Navbar = () => {
       </div>
       <div className="relative">
         <div className="flex items-center gap-5">
-          <div>
-            <CiHeart size={26} />
-          </div>
-          <div className="flex items-center gap-3">
-            <div
-              onClick={() => setActiveCart(!activeCart)}
-              className="relative"
-            >
-              <CiShoppingCart size={26} className="cursor-pointer" />
-              {cart.length > 0 && (
-                <div className="absolute bottom-4 left-4 bg-red-500 text-white rounded-full h-4 w-4 flex cursor-pointer items-center justify-center text-xs">
-                  {cart.length}
-                </div>
-              )}
-            </div>
-            <span className="font-bold">₹{total}</span>
-          </div>
          <div className="lg:hidden">
          <Sheet>
             <SheetTrigger><FaBars size={22} className='hide-mobile-nav text-black mt-2' /></SheetTrigger>

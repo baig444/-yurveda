@@ -23,6 +23,15 @@
   width: 100%;
 }
 
+.Aboutus{
+  background-image: url("https://www.sanofi.com/optim/dotcom/pages/images/our-company/our-strategy/herobanner-strategy-4_20230515142620.jpg?size=xlarge");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+
+}
+
 /* This will hide the scrollbar globally */
 ::-webkit-scrollbar {
   display: none;
