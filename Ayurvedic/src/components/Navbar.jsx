@@ -55,17 +55,19 @@ const Navbar = () => {
       }`}
     >
       <div>
-        <img src="/Logo copy.png" alt="" className="h-12" />
+        <img src="/Logo copy.png" alt="" className="h-16" />
       </div>
       <div className="hidden md:flex lg:flex gap-8">
         {navLinks.map((link) => (
-          <Link key={link.link} to={link.link} className="nav-link font-bold">
+          <Link key={link.link} to={link.link} className="nav-link font-bold flex items-center gap-2">
+            <img src={link.icon} alt="icon" className="w-5 h-5" />
             {link.name}
+            
           </Link>
         ))}
       </div>
       <div className="relative">
-        <div className="flex items-center gap-5 text-yellow-600">
+        <div className="flex items-center gap-5">
           <div>
             <CiHeart size={26} />
           </div>
@@ -85,13 +87,14 @@ const Navbar = () => {
           </div>
          <div className="lg:hidden">
          <Sheet>
-            <SheetTrigger><FaBars size={26} className='hide-mobile-nav text-yellow-500' /></SheetTrigger>
+            <SheetTrigger><FaBars size={22} className='hide-mobile-nav text-black mt-2' /></SheetTrigger>
             <SheetContent>
               <SheetHeader>
                 <SheetTitle className='flex flex-col gap-10 p-4'>
                   {
                     navLinks.map((link) => (
-                      <Link key={link.link} to={link.link} className="nav-link font-bold text-xl">
+                      <Link key={link.link} to={link.link} className="nav-link font-bold text-xl flex items-center gap-4 font-[Minera]">
+                        <img src={link.icon} alt="icon" className="w-5 h-5" />
                         {link.name}
                       </Link>
                     ))

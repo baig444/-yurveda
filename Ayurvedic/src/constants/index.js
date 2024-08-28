@@ -112,13 +112,13 @@ const saman = [
 ]
 
 const  navLinks = [
-  { name: 'Home', link: '/' },
-  { name: 'About', link: '/about' },
-  { name: 'Shop', link: '/shop' },
-  { name: 'Testimonials', link: '/testimonials' },
-  { name: 'Gallery', link: '/gallery' },
-  { name: 'My Account', link: '/register' },
-  { name: 'Contact', link: '/contact' },
+  { name: 'Home', link: '/' , icon:'./home.svg' },
+  { name: 'About', link: '/about', icon:'./about.svg' },
+  { name: 'Shop', link: '/shop', icon:'./shop.svg' },
+  { name: 'Testimonials', link: '/testimonials', icon:'./testimonials.svg' },
+  { name: 'Gallery', link: '/gallery', icon:'./gallery.svg' },
+  { name: 'My Account', link: '/register', icon:'./account.svg' },
+  { name: 'Contact', link: '/contact', icon:'./contact.svg' },
 ];
 
 
