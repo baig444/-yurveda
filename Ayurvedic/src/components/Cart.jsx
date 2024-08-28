@@ -11,7 +11,7 @@ const Cart = () => {
   return (
     <>
       <div
-        className={`fixed right-0 top-0 w-full bg-white lg:w-[28vw] overflow-scroll px-10 pt-4 h-full ${
+        className={`fixed right-0 top-0 w-full z-50 bg-white lg:w-[28vw] overflow-scroll px-10 pt-4 h-full ${
           activeCart ? "translate-x-0" : "translate-x-full"
         } transition-all ease-in-out duration-500 z-50`}
       >
