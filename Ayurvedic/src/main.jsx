@@ -9,7 +9,7 @@ import { CartProvider } from "./Context/ProductContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <CartProvider>
-  <main className="font-[Minera]">
+  <main className="font-matter">
       <BrowserRouter>
         {/* <TopBar /> */}
         <Navbar />

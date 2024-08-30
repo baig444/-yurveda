@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,54 +36,88 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollTop]);
-  return (
-    // <nav className='hidden md:flex lg:flex h-12 w-full bg-zinc-800 text-white items-center justify-center gap-5'>
-    //   <Link className="nav-link" to="/">Home</Link>
-    //   <Link className="nav-link" to="/about">About</Link>
-    //   <Link className="nav-link" to="/shop">Shop</Link>
-    //   <Link className="nav-link" to="/testimonials">Testimonials</Link>
-    //   <Link className="nav-link" to="/gallery">Gallery</Link>
-    //   <Link className="nav-link" to="/register">My Account</Link>
-    //   <Link className="nav-link" to="/contact">Contact</Link>
-    // </nav>
 
+  const handleMouseEnter = () => {
+    setIsDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDropdownOpen(false);
+  };
+
+  return (
     <nav
-      className={`fixed top-0 flex md:flex lg:flex h-16 transition-transform duration-300 z-50 ease-in-out  w-full backdrop-blur-md   items-center justify-between gap-5 px-10 p-2 ${
+      className={`fixed top-0 flex md:flex lg:flex h-16 transition-transform duration-300 z-50 ease-in-out  w-full backdrop-blur-md items-center justify-between px-10 p-2 ${
         scrollDirection === "down" ? "translate-y-[-100%]" : "translate-y-0"
       }`}
     >
       <div>
-        <img src="/Logo copy.png" alt="" className="h-16" />
+        <img src="/Healthix.png" alt="" className="h-10" />
       </div>
       <div className="hidden md:flex lg:flex gap-8">
         {navLinks.map((link) => (
-          <Link key={link.link} to={link.link} className="nav-link font-bold flex items-center gap-2">
-            {link.name}
-            
-          </Link>
+          <div key={link.link} className="relative">
+            <Link
+              to={link.link}
+              className="nav-link font-bold flex items-center gap-2"
+              onMouseEnter={link.name === "Medicines" ? handleMouseEnter : null}
+            >
+              {link.name}
+            </Link>
+            {link.name === "Medicines" && isDropdownOpen && (
+              <div
+                className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <Link
+                  to="/medicines/diabetes"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                >
+                  Diabetes
+                </Link>
+                <Link
+                  to="/medicines/cardio"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                >
+                  Cardio
+                </Link>
+              </div>
+            )}
+          </div>
         ))}
+        <button>
+          <a
+            href="/enquiry"
+            className="font-bold rounded-sm p-3 bg-blue-600 text-white"
+          >
+            Enquiry
+          </a>
+        </button>
       </div>
-      <div className="relative">
-        <div className="flex items-center gap-5">
-         <div className="lg:hidden">
-         <Sheet>
-            <SheetTrigger><FaBars size={22} className='hide-mobile-nav text-black mt-2' /></SheetTrigger>
+      <div className="lg:hidden flex items-center gap-5">
+        <div>
+          <Sheet>
+            <SheetTrigger>
+              <FaBars size={22} className="hide-mobile-nav text-black mt-2" />
+            </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle className='flex flex-col gap-10 p-4'>
-                  {
-                    navLinks.map((link) => (
-                      <Link key={link.link} to={link.link} className="nav-link font-bold text-xl flex items-center gap-4 font-[Minera]">
-                        <img src={link.icon} alt="icon" className="w-5 h-5" />
-                        {link.name}
-                      </Link>
-                    ))
-                  }
+                <SheetTitle className="flex flex-col gap-10 p-4">
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.link}
+                      to={link.link}
+                      className="nav-link font-bold text-xl flex items-center gap-4 font-[Minera]"
+                    >
+                      <img src={link.icon} alt="icon" className="w-5 h-5" />
+                      {link.name}
+                    </Link>
+                  ))}
                 </SheetTitle>
               </SheetHeader>
             </SheetContent>
           </Sheet>
-         </div>
         </div>
       </div>
     </nav>

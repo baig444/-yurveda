@@ -11,6 +11,8 @@ import ProductDetail from "./pages/ProductDetail";
 import { Checkout } from "./pages/Checkout";
 import OrderConfirm from "./pages/OrderConfirm";
 import Cart from "./components/Cart";
+import Diabetes from "./pages/Diabetes";
+import Enquiry from "./pages/Enquiry";
 // import LocomotiveScroll from 'locomotive-scroll';
 
 const App = () => {
@@ -26,11 +28,13 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/medicines" element={<Shop />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/success" element={<OrderConfirm />} />
+        <Route path="medicines/diabetes" element={<Diabetes />} />
+        <Route path="enquiry" element={<Enquiry />} />
       </Routes>
     </div>
   );

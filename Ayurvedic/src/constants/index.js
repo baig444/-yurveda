@@ -113,13 +113,36 @@ const saman = [
 
 const  navLinks = [
   { name: 'Home', link: '/' , icon:'./home.svg' },
-  { name: 'About', link: '/about', icon:'./about.svg' },
-  { name: 'Shop', link: '/shop', icon:'./shop.svg' },
+  { name: 'Our Company', link: '/about', icon:'./about.svg' },
+  { name: 'Medicines', link: '/medicines', icon:'./shop.svg' },
   { name: 'Testimonials', link: '/testimonials', icon:'./testimonials.svg' },
-  { name: 'Gallery', link: '/gallery', icon:'./gallery.svg' },
-  { name: 'My Account', link: '/register', icon:'./account.svg' },
   { name: 'Contact', link: '/contact', icon:'./contact.svg' },
 ];
 
+const diabetes = [
+  {
+    name: "537M",
+    description:'adults worldwide are living with diabetes today.'
+  },
+  {
+    name: "240M",
+    description:'adults living with diabetes are undiagnosed (almost 1 in 2).1'
+  },
+  {
+    name: "783M",
+    description:'adults are projected to have diabetes by 2045(1)'
+  }
+]
 
-export {images,certificates,saman,navLinks}
+const medicine = [
+     'https://plus.unsplash.com/premium_photo-1672163163579-e5d4aedd26af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNpbmVzfGVufDB8fDB8fHww',
+
+     'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fG1lZGljaW5lc3xlbnwwfHwwfHx8MA%3D%3D',
+
+     'https://images.unsplash.com/photo-1523243319451-54b60322f948?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fG1lZGljaW5lc3xlbnwwfHwwfHx8MA%3D%3D',
+     
+     'https://plus.unsplash.com/premium_photo-1672941426599-44cc7bc767b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODF8fG1lZGljaW5lc3xlbnwwfHwwfHx8MA%3D%3D'
+
+]
+
+export {images,certificates,saman,navLinks,diabetes,medicine}
