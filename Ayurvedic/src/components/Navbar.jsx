@@ -67,7 +67,6 @@ const Navbar = () => {
             {link.name === "Medicines" && isDropdownOpen && (
               <div
                 className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md"
-                onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
                 <Link
@@ -89,7 +88,7 @@ const Navbar = () => {
         <button>
           <a
             href="/enquiry"
-            className="font-bold rounded-sm p-3 bg-blue-600 text-white"
+            className="font-bold rounded-sm p-3 bg-black text-white"
           >
             Enquiry
           </a>
@@ -105,14 +104,35 @@ const Navbar = () => {
               <SheetHeader>
                 <SheetTitle className="flex flex-col gap-10 p-4">
                   {navLinks.map((link) => (
+                    <div key={link.link} className="relative">
                     <Link
                       key={link.link}
                       to={link.link}
                       className="nav-link font-bold text-xl flex items-center gap-4 font-[Minera]"
+                      onMouseEnter={link.name === "Medicines" ? handleMouseEnter : null}
                     >
-                      <img src={link.icon} alt="icon" className="w-5 h-5" />
                       {link.name}
                     </Link>
+                    {link.name === "Medicines" && isDropdownOpen && (
+                      <div
+                        className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md"
+                        onMouseLeave={handleMouseLeave}
+                      >
+                        <Link
+                          to="/medicines/diabetes"
+                          className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                        >
+                          Diabetes
+                        </Link>
+                        <Link
+                          to="/medicines/cardio"
+                          className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                        >
+                          Cardio
+                        </Link>
+                      </div>
+                    )}
+                    </div>
                   ))}
                 </SheetTitle>
               </SheetHeader>
