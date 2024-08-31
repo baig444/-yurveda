@@ -20,7 +20,7 @@ const App = () => {
   // const scroll = new LocomotiveScroll()
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = '//code.tidio.co/your-unique-code.js'; // Replace with your actual Tidio script URL
+    script.src = "//code.tidio.co/sfacng6lfmrcyxanw5idjrzynk8rc4wc.js"; // Replace with your actual Tidio script URL
     script.async = true;
     script.onload = () => console.log('Tidio script loaded successfully');
     script.onerror = () => console.error('Failed to load Tidio script');
@@ -49,7 +49,7 @@ const App = () => {
         href="https://wa.me/9311776514"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed right-5 bg-green-500 rounded-full shadow-md p-3 text-white  bottom-20 text-3xl cursor-pointer"
+        className="fixed right-7 bg-green-500 rounded-full shadow-md p-3 text-white  bottom-36 text-4xl cursor-pointer"
       >
         <FaWhatsapp />
       </a>

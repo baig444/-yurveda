@@ -43,9 +43,12 @@ const Enquiry = () => {
             </label>
 
             <div className="relative">
-             <textarea name="text" placeholder="Enter Message" id="text"
-             className="w-full outline rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-             ></textarea>
+              <textarea
+                name="text"
+                placeholder="Enter Message"
+                id="text"
+                className="w-full outline rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+              ></textarea>
             </div>
           </div>
 
