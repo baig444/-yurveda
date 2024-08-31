@@ -27,9 +27,9 @@ const Comboproduct = () => {
               <p className="text-sm font-bold">{product.name}</p>
               <div className="flex items-center gap-2 text-center">
                 <p className="line-through text-xs text-gray-500">
-                  {product.price}
+                  ₹{product.price}
                 </p>
-                <span>{product.originalPrice}</span>
+                <span>₹{product.originalPrice}</span>
               </div>
             </div>
             <button

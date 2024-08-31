@@ -63,10 +63,10 @@ export default function ProductDetail() {
             </p>
             <div className="mt-5 flex items-center ">
               <div className="text-heading pr-2 text-base font-bold md:pr-0 md:text-xl lg:pr-2 lg:text-2xl 2xl:pr-0 2xl:text-4xl">
-                ${product.originalPrice}
+              ₹{product.originalPrice}
               </div>
               <span className="font-segoe pl-2 text-sm text-gray-400 line-through md:text-base lg:text-lg xl:text-xl">
-                ${product.price}
+              ₹{product.price}
               </span>
             </div>
           </div>
