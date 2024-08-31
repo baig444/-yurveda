@@ -19,24 +19,37 @@ const Home = () => {
         <div className="flex flex-wrap items-center justify-evenly py-4 px-2">
           {Products.map((product) => {
             return (
-              <div key={product.id} className="flex flex-col items-center p-3 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                <img src={product.imageUrl} alt={product.name} className="h-20 w-20 object-cover" />
+              <div
+                key={product.id}
+                className="flex flex-col items-center p-3 w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+              >
+                <img
+                  src={product.imageUrl}
+                  alt={product.name}
+                  className="h-20 w-20 object-cover"
+                />
                 <p className="text-md font-bold mt-2">{product.name}</p>
-                <span className="text-xs w-52 text-center mt-1">{product.subname}</span>
+                <span className="text-xs w-52 text-center mt-1">
+                  {product.subname}
+                </span>
               </div>
             );
           })}
         </div>
       </div>
-      <Deals/>
-      <AboutUs/>
+      <Deals />
+      <AboutUs />
       <div className="w-full bg-black mt-20">
-       <img src="https://corehealthandwellness.in/wp-content/uploads/2024/07/treatmnet-range-1.webp" alt="" className="h-full w-full object-cover" />
+        <img
+          src="https://corehealthandwellness.in/wp-content/uploads/2024/07/treatmnet-range-1.webp"
+          alt=""
+          className="h-full w-full object-cover"
+        />
       </div>
-      <Comboproduct/>
-      <Explore/>
-      <Testimonials/>
-      <DeliveryPartner/>
+      <Comboproduct />
+      <Explore />
+      <Testimonials />
+      <DeliveryPartner />
     </main>
   );
 };

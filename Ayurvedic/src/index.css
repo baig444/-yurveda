@@ -57,6 +57,8 @@ body {
   display: block;
 }
 
+
+
 @media (min-width: 800px) and (max-width: 1017px) {
   .hide-mobile-nav {
     display: none;

@@ -88,9 +88,9 @@ const Navbar = () => {
         <button>
           <a
             href="/enquiry"
-            className="font-bold rounded-sm p-3 bg-black text-white"
+            className="font-bold rounded-md p-3 bg-black text-white"
           >
-            Enquiry
+            Enquire Now
           </a>
         </button>
       </div>
@@ -141,7 +141,7 @@ const Navbar = () => {
                       href="/enquiry"
                       className="font-bold rounded-sm p-3 bg-black text-white"
                     >
-                      Enquiry
+                      Enquire Now
                     </a>
                   </button>
                 </SheetTitle>
