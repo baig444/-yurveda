@@ -13,21 +13,20 @@ import Cart from "./components/Cart";
 import Diabetes from "./pages/Diabetes";
 import Enquiry from "./pages/Enquiry";
 import { FaWhatsapp } from "react-icons/fa";
-import { useEffect } from "react";
 // import LocomotiveScroll from 'locomotive-scroll';
 
 const App = () => {
   // const scroll = new LocomotiveScroll()
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "//code.tidio.co/sfacng6lfmrcyxanw5idjrzynk8rc4wc.js"; // Replace with your actual Tidio script URL
-    script.async = true;
-    script.onload = () => console.log('Tidio script loaded successfully');
-    script.onerror = () => console.error('Failed to load Tidio script');
-    document.body.appendChild(script);
-  }, []);
+  // useEffect(() => {
+  //   const script = document.createElement('script');
+  //   script.src = "//code.tidio.co/sfacng6lfmrcyxanw5idjrzynk8rc4wc.js"; // Replace with your actual Tidio script URL
+  //   script.async = true;
+  //   script.onload = () => console.log('Tidio script loaded successfully');
+  //   script.onerror = () => console.error('Failed to load Tidio script');
+  //   document.body.appendChild(script);
+  // }, []);
   return (
-    <div className="w-full pt-10">
+    <div className="w-full">
       {/* <div className="circle"></div> */}
       <Cart />
       <Routes>
@@ -49,7 +48,7 @@ const App = () => {
         href="https://wa.me/9311776514"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed right-7 bg-green-500 rounded-full shadow-md p-3 text-white  bottom-36 text-4xl cursor-pointer"
+        className="fixed right-7 bg-green-500 rounded-full shadow-md p-2 text-white  bottom-16 text-4xl cursor-pointer"
       >
         <FaWhatsapp />
       </a>

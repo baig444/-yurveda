@@ -9,33 +9,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../components/ui/sheet";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
-  const [scrollDirection, setScrollDirection] = useState("up");
-  const [lastScrollTop, setLastScrollTop] = useState(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScrollTop > lastScrollTop) {
-        // Scrolling down
-        setScrollDirection("down");
-      } else {
-        // Scrolling up
-        setScrollDirection("up");
-      }
-      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop); // For Mobile or negative scrolling
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollTop]);
 
   const handleMouseEnter = () => {
     setIsDropdownOpen(true);
@@ -46,11 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`fixed top-0 flex md:flex lg:flex h-16 transition-transform duration-300 z-50 ease-in-out  w-full backdrop-blur-md items-center justify-between px-10 p-2 ${
-        scrollDirection === "down" ? "translate-y-[-100%]" : "translate-y-0"
-      }`}
-    >
+    <nav className="flex h-16 items-center justify-between px-14 bg-[#ffffff40] backdrop-blur-md">
       <div>
         <img src="/Healthix.png" alt="" className="h-10" />
       </div>
@@ -73,7 +47,7 @@ const Navbar = () => {
                   to="/medicines/diabetes"
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                 >
-                  Diabetes
+                  INDUSTRIAL
                 </Link>
                 <Link
                   to="/medicines/cardio"
@@ -97,7 +71,7 @@ const Navbar = () => {
       <div className="lg:hidden flex items-center gap-5">
         <div>
           <Sheet>
-            <SheetTrigger>
+            <SheetTrigger asChild>
               <FaBars size={22} className="hide-mobile-nav text-black mt-2" />
             </SheetTrigger>
             <SheetContent>
