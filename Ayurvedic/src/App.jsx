@@ -42,7 +42,7 @@ const App = () => {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/success" element={<OrderConfirm />} />
         <Route path="medicines/diabetes" element={<Diabetes />} />
-        <Route path="enquiry" element={<Enquiry />} />
+        <Route path="/enquiry" element={<Enquiry />} />
       </Routes>
       <a
         href="https://wa.me/9311776514"
