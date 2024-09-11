@@ -60,12 +60,12 @@ const Navbar = () => {
           </div>
         ))}
         <button>
-          <a
-            href="/enquiry"
+          <Link
+            to="/enquiry"
             className="font-bold rounded-md p-3 bg-black text-white"
           >
             Enquire Now
-          </a>
+          </Link>
         </button>
       </div>
       <div className="lg:hidden flex items-center gap-5">
@@ -111,12 +111,12 @@ const Navbar = () => {
                     </div>
                   ))}
                   <button>
-                    <a
-                      href="/enquiry"
+                    <Link
+                      to="/enquiry"
                       className="font-bold rounded-sm p-3 bg-black text-white"
                     >
                       Enquire Now
-                    </a>
+                    </Link>
                   </button>
                 </SheetTitle>
               </SheetHeader>
