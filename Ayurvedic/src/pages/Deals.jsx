@@ -19,7 +19,7 @@ const Deals = () => {
             <img
               src={product.imageUrl}
               alt={product.name}
-              className="h-[60%] w-full object-cover rounded-lg mb-4"
+              className="h-52 w-full object-contain rounded-lg mb-4"
             />
             <div className="flex flex-col">
               <div className="flex items-center gap-2 text-white mb-2">
@@ -36,11 +36,11 @@ const Deals = () => {
                 Weight Loss
               </Link>
               <h1 className="text-md font-bold">{product.name}</h1>
-              <p className="text-gray-500 text-xs">{product.description}</p>
-              <div className="flex items-center gap-2">
+              <p className="text-gray-500 text-xs">{product.description.slice(0, 100)}</p>
+              {/* <div className="flex items-center gap-2">
                 <p className="line-through text-gray-500">₹{product.originalPrice}</p>
                 <span>₹{product.price}</span>
-              </div>
+              </div> */}
             </div>
           </Link>
         ))}

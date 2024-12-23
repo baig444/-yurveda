@@ -20,26 +20,26 @@ const Comboproduct = () => {
             <img
               src={product.imageUrl}
               alt=""
-              className="h-40 w-full object-cover rounded-t-lg"
+              className="h-40 w-full object-contain rounded-t-lg"
             />
             <div className="p-2 flex flex-col items-center gap-1">
-              <h2 className="text-xs font-bold">Weigh Loss</h2>
+              {/* <h2 className="text-xs font-bold">Weigh Loss</h2> */}
               <p className="text-sm font-bold">{product.name}</p>
               <div className="flex items-center gap-2 text-center">
-                <p className="line-through text-xs text-gray-500">
+                {/* <p className="line-through text-xs text-gray-500">
                   ₹{product.price}
                 </p>
-                <span>₹{product.originalPrice}</span>
+                <span>₹{product.originalPrice}</span> */}
               </div>
             </div>
             <button
-              onClick={() => {
-                addToCart(product);
-                setActiveCart(!activeCart);
-              }}
+              // onClick={() => {
+              //   addToCart(product);
+              //   setActiveCart(!activeCart);
+              // }}
               className="bg-black hover:bg-gray-800 transition-all text-white font-bold py-2 px-4 rounded w-full"
             >
-              Add to Cart
+              Enquire Now
             </button>
           </div>
         ))}

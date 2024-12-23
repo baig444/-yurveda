@@ -108,6 +108,94 @@ const saman = [
         originalPrice: 1999,
         imageUrl: 'https://corehealthandwellness.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-07-22-at-4.36.36-PM-1-300x224.jpeg',
     },
+    {
+        id: 4,
+        name: 'Dapavista-10',
+        description: 'Each film coated tablet contains: Dapagliflozin Propanediol Monohydrate equivalent to Dapagliflozin 10 mgExcipients q.s.Colours: Titanium Dioxide IP & Iron Oxide Yellow ',
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/h1.png'
+    },
+    {
+        id: 5,
+        name: 'Sitasept-50',
+        description: "Each film coated tablet contains:Sitagliptin Phosphate Monohydrate IP Equivalent to Sitagliptin 50 mg Excipients q.s. Colours: Ferric oxide Red USP-NF, Ferric oxide Yellow USP-NF and Titanium Dioxide IP ",
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/h2.png'
+    },
+    {
+        id: 6,
+        name: 'GLICXA 60-XR',
+        description: "Each uncoated modified release tablet contains:Gliclazide IP 60 mg Excipients q.s Dosage : As directed by the Physician.Storage:Store protected from light and moisture, at a temperature not exceeding 30°C.Keep out of reach of children.Tablet should be swallowed whole and not to be chewed or crushed.",
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/h3.png'
+    },
+    {
+        id: 7,
+        name: 'GLICXA 30-XR',
+        description: "Each uncoated modified release tablet contains:Gliclazide IP 30 mg Excipients q.s. Colour: Sunset Yellow Dosage :As directed by the Physician.Storage:Store protected from light and moisture, at a temperature not exceeding 30°C.Keep out of reach of children.Tablet should be swallowed whole and not to be chewed or crushed.",
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/h4.png'
+    },
+    {
+        id: 8,
+        name: 'GLICXA-M60 XR',
+        description: "Each uncoated bilayered tablet contains:Metformin IP 500 mg(As sustained release form)Gliclazide IP 60 mg(As sustained release form) Excipients q.s.Colours: Red Oxide Of Iron and Yellow Oxide Of Iron Dosage :As directed by the Physician.Storage:Store protected from light and moisture, at a temperature not exceeding 30°C.Keep out of reach of children.Tablet should be swallowed whole and not to be chewed or crushed.",
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/h5.png'
+    },
+    {
+        id: 9,
+        name: 'Sitacept 50/500',
+        description: "Each film coated tablet contains: Sitagliptin Phosphate  Monohydrate IP 64.25 mg  Equivalent to Sitagliptin 50 mg  Metformin Hydrochloride IP 500 mg  Excipients q.s. Colours : Ferric Oxide Red USP-NF,  Ferric Oxide Yellow USP-NF and  Titanium Dioxide IP",
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/g6.png'
+    },
+    {
+        id: 10,
+        name: 'Sitacept-100',
+        description: "Each film coated tablet contains:Sitagliptin Phosphate Monohydrate IPEquivalent to Sitagliptin 100 mgExcipients q.s. Colours: Titanium Dioxide IP, Iron Oxide Red and Iron Oxide Yellow ",
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/h7.png'
+    },
+    {
+        id: 11,
+        name: 'Sitacept-50/1000',
+        description: "Each film coated tablet contains Sitagliptin Phosphate Monohydrate IP 64.25 mg Equivalent to Sitagliptin 50 mg Metformin Hydrochloride IP 1000 mg Excipients q.s.Colours : Brilliant Blue and Titanium Dioxide IP ",
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/h8.png'
+    },
+    {
+        id: 12,
+        name: 'MIDOCENT',
+        description: "Each uncoated tablet contains: Midodrine  Hydrochloride USP............2.5 mg Excipients...............................q.s.",
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/h9.png'
+    },
+    {
+        id: 13,
+        name: 'FERICENT',
+        description: "Each uncoated tablet contains: Midodrine  Hydrochloride USP............2.5 mg Excipients...............................q.s.",
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/h10.png'
+    },
+    {
+        id: 14,
+        name: 'Dapavista-S 10/100',
+        description: "Each film coated tablet contains: Sitagliptin Phosphate Monohydrate IP eq. to Sitagliptin 100 mg  Dapagliflozin Propanediol monohydrate eq. to Dapagliflozin 10 mg Colour : ferric Oxide (Red) USP-NF",
+        price: 2999,
+        originalPrice: 1999,
+        imageUrl: '/h11.png'
+    },
 
 ]
 
