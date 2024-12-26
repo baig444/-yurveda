@@ -5,6 +5,8 @@ import { CartContext } from "../Context/ProductContext.jsx";
 
 const Comboproduct = () => {
   const { addToCart, activeCart, setActiveCart } = useContext(CartContext);
+  const whatsappNumber = "+919311776514"; // Replace with your number
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
   return (
     <div className="min-h-screen w-full p-10">
       <div className=" h-[20vh] w-full flex flex-col items-center text-gray-700">
@@ -39,7 +41,9 @@ const Comboproduct = () => {
               // }}
               className="bg-black hover:bg-gray-800 transition-all text-white font-bold py-2 px-4 rounded w-full"
             >
-              Enquire Now
+              <Link to={whatsappLink} target="_blank" className="flex items-center justify-center gap-2">
+                Enquire Now
+                </Link>
             </button>
           </div>
         ))}
