@@ -1,195 +1,171 @@
-/* eslint-disable no-irregular-whitespace */
-import { diabetes, medicine } from "../constants";
+import { motion } from "framer-motion"
+import { Facebook, Linkedin, Twitter, ArrowRight, Users, Target, Lightbulb, Heart, Shield, Clock } from 'lucide-react'
+import { Button } from "../components/ui/button"
 
-/* eslint-disable react/no-unescaped-entities */
-const Diabetes = () => {
+const values = [
+  {
+    id: 1,
+    title: "Leading the way",
+    description: "As pioneers in integrated healthcare solutions, we strive to be an industry leader and a mark of excellence in a constantly changing environment.",
+    icon: <Users className="w-12 h-12 text-green-600" />,
+    stats: ["500+ Healthcare Professionals", "25+ Years Experience", "100K+ Patients Served"]
+  },
+  {
+    id: 2,
+    title: "Focus and Accountability",
+    description: "We are focused in everything we do. We define clear objectives and concentrate our efforts, attention and energy to achieve them.",
+    icon: <Target className="w-12 h-12 text-green-600" />,
+    stats: ["98% Patient Satisfaction", "24/7 Support", "ISO 9001 Certified"]
+  },
+  {
+    id: 3,
+    title: "Getting it done together",
+    description: "We all work for one company. By working together more effectively, in close collaboration and alignment, we tap into our full potential and drive our success.",
+    icon: <Heart className="w-12 h-12 text-green-600" />,
+    stats: ["50+ Partner Hospitals", "200+ Healthcare Programs", "15+ Specialties"]
+  },
+  {
+    id: 4,
+    title: "Innovating Where We Create Value",
+    description: "We continuously innovate for patients, our partners in the healthcare system and our stakeholders. We constantly look for original and better ways to excel.",
+    icon: <Lightbulb className="w-12 h-12 text-green-600" />,
+    stats: ["30+ Research Papers", "15+ Patents", "5+ Innovation Awards"]
+  }
+]
+
+export default function Diabties() {
   return (
-    <div className="w-full p-10">
-      <div className="mt-10 px-4">
-        <h1 className="text-5xl mb-5 font-bold">Diabetes</h1>
-        <h1>
-          For 100 years, our innovations have helped define the standard of care
-          for people living with diabetes. We are not done.
-        </h1>
-      </div>
-      <div className="flex flex-wrap  min-h-[90vh] w-full items-center justify-center gap-16">
-        <div className="w-96">
-          <h1 className="text-2xl">
-            "Looking to the future, we want to help bring diabetes under control
-            with our medicines, education programs, services, apps, and
-            connected devices. My pledge to the diabetes community is: we won’t
-            settle for less."
-          </h1>
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      {/* Hero Section */}
+      <section className="bg-green-600 text-white py-20">
+        <div className="container mx-auto px-4">
+          <motion.div 
+            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h1 className="text-5xl font-bold mb-6">Our Values Define Us</h1>
+            <p className="text-xl text-green-50 mb-8">
+              At Healthix Life, our values are more than just words – they're the foundation of everything we do.
+              They guide our decisions, shape our culture, and drive our commitment to excellence in healthcare.
+            </p>
+            <Button variant="outline" className="bg-white text-green-600 hover:bg-green-50">
+              Learn More About Healthix Life
+            </Button>
+          </motion.div>
         </div>
-        <div className="flex flex-col items-center">
-          <img
-            src="https://www.sanofi.com/optim/dotcom/content-app/biographies/bio-olivier-charmeil_20240329142126.jpg?size=small"
-            alt=""
-            className="w-60 h-60 rounded-full object-cover"
-          />
-          <h1 className="text-xl">Olivier Chameil</h1>
-          <h3 className="w-72 text-center">
-            Executive Vice President and Global Head of General Medicines
-          </h3>
-        </div>
-      </div>
-      <div className="min-h-[60vh] w-full p-6">
-        <h1 className="text-5xl font-semibold">Did You Know?</h1>
-        <div className="mt-8 flex flex-wrap gap-4">
-          {diabetes.map((item) => (
-            <div
-              key={item.id}
-              className="max-w-fit h-fit border border-gray-300 rounded-lg p-4"
-            >
-              <h1 className="lg:text-6xl font-extrabold">{item.name}</h1>
-              <h1 className="border-b border-gray-400 mt-4"></h1>
-              <h3 className="mt-4 w-80">{item.description}</h3>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="w-full mt-20 flex flex-wrap gap-10 px-10">
-        {medicine.map((item) => (
-          <div key={item.id} className="h-[60vh]">
-            <img
-              src={item}
-              alt=""
-              className="w-60 h-full object-cover rounded-lg hover:scale-105 transition-all"
-            />
-          </div>
-        ))}
-      </div>
-      <div className="w-full min-h-screen mt-20 flex flex-col gap-40">
-        <div className="lg:flex items-center justify-around">
-          <div className="h-fit lg:w-[45%]">
-            <img
-              src="https://www.sanofi.com/optim/dotcom/pages/images/your-health/medicines/diabetes/what-is-diabetes_20230502155825.jpg?size=large"
-              alt="image"
-              className="rounded-lg"
-            />
-          </div>
-          <div className="h-[50vh] lg:w-[40%] px-5">
-            <h1 className="text-5xl lg:mb-4">What Is Diabetes?</h1>
-            <p>
-              Diabetes is a chronic condition affecting the body’s ability to
-              effectively process and convert sugar into energy.
-            </p>
-            <p className="mt-4">
-              People with type 1 diabetes do not produce insulin, a hormone made
-              by the pancreas. People with type 2 diabetes do not respond to
-              insulin as well as they should, or do not make enough of it.2 This
-              leads to raised glucose levels in the blood which in the long-term
-              may lead to complications in various organs.3
-            </p>
-          </div>
-        </div>
-        <div className="lg:flex items-center justify-around">
-          <div className="h-fit lg:w-[40%] px-5">
-            <h1 className="text-5xl mb-4">
-              Supporting Access to Diabetes Education
-            </h1>
-            <p>
-              Our aim is to transform the way diabetes is controlled and
-              treated, not just with medicines, but with a holistic approach.
-            </p>
-            <p className="mt-4">
-              We believe diabetes education is critical for individuals living
-              with the condition and for the healthcare professionals who care
-              for them.
-            </p>
-          </div>
-          <div className="h-[50vh] lg:w-[45%] px-5">
-            <img
-              src="https://www.sanofi.com/optim/dotcom/pages/images/your-health/medicines/diabetes/supporting-access-to-diabetes-education_20230502155825.jpg?size=large"
-              alt="image"
-              className="rounded-lg"
-            />
-          </div>
-        </div>
-        <div className="lg:flex items-center justify-around">
-          <div className="h-fit lg:w-[45%] px-5">
-            <img
-              src="https://www.sanofi.com/optim/dotcom/pages/images/your-health/medicines/diabetes/blood-sugar-levels_20230502155824.jpg?size=large"
-              alt="image"
-              className="rounded-lg"
-            />
-          </div>
-          <div className="h-[50vh] lg:w-[40%] px-5">
-            <h1 className="text-5xl mb-4">
-              Blood Sugar Levels and ‘Time in Range’
-            </h1>
-            <p>
-              Many people living with diabetes experience phases when blood
-              sugar levels are too high, then too low. This variability can be
-              challenging to manage.4
-            </p>
-            <p className="mt-4">
-              ‘Time in Range’ (TiR) is the time a person spends with blood sugar
-              levels in their target range, improving the understanding of this
-              key metric is a mission for us at Sanofi.
-            </p>
-          </div>
-        </div>
-        <div className="lg:flex items-center justify-around">
-          <div className="h-fit lg:w-[40%] px-5">
-            <h1 className="text-5xl mb-4">The Future of Diabetes Care</h1>
-            <p>
-              How can we go beyond medicines to help change the way clinicians
-              and people living with diabetes make decisions about their
-              diabetes?
-            </p>
-            <p className="mt-4">
-              And how can we help shape the future of this chronic disease and
-              positively impact health outcomes?
-            </p>
-            <p className="mt-4">
-              Digitally powered personalized healthcare will help us
-              revolutionize and improve access to treatments and meet these
-              challenges.
-            </p>
-          </div>
-          <div className="h-fit lg:w-[45%] px-5">
-            <img
-              src="https://www.sanofi.com/optim/dotcom/pages/images/your-health/medicines/diabetes/future-of-diabetes-care_20230502155824.jpg?size=large"
-              alt="image"
-              className="rounded-lg"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="lg:p-16">
-        <h1 className="text-5xl mt-4">Refrence</h1>
-        <ul className="list-decimal space-y-2 mt-10 px-4">
-          <li>
-            <h1>
-              International Diabetes Federation (2022). About Diabetes: Diabetes
-              facts & figures. Accessed December 2022.
-            </h1>
-          </li>
-          <li>
-            <h1>
-              Healthline (2022). Type 1 and Type 2 Diabetes: What’s the
-              Difference? Accessed December 2022
-            </h1>
-          </li>
-          <li>
-            <h1>
-              International Diabetes Federation (2022). About Diabetes. Accessed
-              December 2022
-            </h1>
-          </li>
-          <li>
-            <h1>
-              Sun B., et al. (2021) Comprehensive elaboration of glycemic
-              variability in diabetic macrovascular and microvascular
-              complications. Cardiovascular Diabetology 20:9; doi:
-              10.1186/s12933-020-01200-7
-            </h1>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
-};
+      </section>
 
-export default Diabetes;
+      {/* Mission Statement */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="relative"
+            >
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-64 h-64 rounded-full border-4 border-green-100 animate-spin-slow" />
+                <div className="w-48 h-48 rounded-full border-4 border-green-200 animate-spin-slow-reverse" />
+              </div>
+              <div className="relative z-10 bg-white rounded-2xl shadow-xl p-10">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+                <p className="text-lg text-gray-600">
+                  What we do every day matters. We're applying passion and commitment towards better health. 
+                  Our culture is about not only what and how we do things, but also why we do them.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-16">Our Core Values</h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            {values.map((value, index) => (
+              <motion.div
+                key={value.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2 }}
+                className="bg-white rounded-lg shadow-lg overflow-hidden"
+              >
+                <div className="p-8">
+                  <div className="flex items-center mb-6">
+                    <div className="bg-green-100 rounded-full p-3 mr-4">
+                      {value.icon}
+                    </div>
+                    <h3 className="text-2xl font-semibold text-gray-900">{value.title}</h3>
+                  </div>
+                  <p className="text-gray-600 mb-6">{value.description}</p>
+                  <div className="border-t pt-6">
+                    <h4 className="text-sm font-semibold text-gray-500 mb-3">Key Achievements:</h4>
+                    <ul className="space-y-2">
+                      {value.stats.map((stat, i) => (
+                        <li key={i} className="flex items-center text-sm text-gray-600">
+                          <ArrowRight className="w-4 h-4 mr-2 text-green-500" />
+                          {stat}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Values */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-8">Our Commitment to Excellence</h2>
+            <p className="text-lg text-gray-600 mb-12">
+              We are committed to delivering the highest quality healthcare services, 
+              maintaining transparency in our operations, and continuously improving 
+              our standards of care. Our dedication to excellence is reflected in 
+              every aspect of our service delivery.
+            </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <Shield className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Patient Safety</h3>
+                <p className="text-gray-600">Ensuring the highest standards of patient care and safety in everything we do.</p>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <Clock className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Timely Care</h3>
+                <p className="text-gray-600">Providing prompt and efficient healthcare services when needed most.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Share Section */}
+      <section className="py-12 bg-gray-100">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-gray-600 mb-4">Share our values with your network</p>
+          <div className="flex justify-center gap-4">
+            <Button variant="outline" size="icon">
+              <Facebook className="w-4 h-4 text-blue-600" />
+            </Button>
+            <Button variant="outline" size="icon">
+              <Linkedin className="w-4 h-4 text-blue-700" />
+            </Button>
+            <Button variant="outline" size="icon">
+              <Twitter className="w-4 h-4 text-blue-400" />
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}

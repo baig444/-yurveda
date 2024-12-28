@@ -1,134 +1,128 @@
-const About = () => {
-  return (
-    <section className="w-full">
-      <div>
-        <div className="Aboutus p-20">
-          <div className="lg:w-[50%] bg-white p-10 rounded-lg">
-            <h1 className="lg:text-5xl lg:mb-5">Our Strategy</h1>
-            <h3>
-              We’re on course to transform the practice of medicine through
-              breakthrough science and make a positive impact on our people and
-              the communities we serve.
-            </h3>
-          </div>
-        </div>
-        <div className="w-full min-h-screen mt-20 flex flex-col gap-60">
-          <div className="lg:flex items-center justify-around">
-            <div className="h-fit lg:w-[45%]">
-              <img
-                src="https://images.unsplash.com/photo-1609188076864-c35269136b09?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="image"
-                className="rounded-lg"
-              />
-            </div>
-            <div className="h-[50vh] lg:w-[40%] px-5">
-              <h1 className="text-5xl lg:mb-4">The Voices Behind Our Purpose</h1>
-              <p>
-                We chase the miracles of science to improve people’s lives, and
-                sometimes that means starting over with Plan B, Plan C, or even
-                Plan Z. This film brings together the inner thoughts and
-                ambitions of the people at Sanofi, who find inspiration from
-                loved ones, motivation from families, and a united strength to
-                push harder until we turn a corner.
-              </p>
-            </div>
-          </div>
-          <div className="lg:flex items-center justify-around">
-            <div className="h-fit lg:w-[40%] px-5">
-              <h1 className="text-5xl mb-4">
-                Transforming The Practice of Medicine
-              </h1>
-              <p>
-                Prioritization and focus are helping us unlock and maximize the
-                potential of key medicines, vaccines, and self-care solutions
-                for people, across our global business units: Specialty Care,
-                <span>
-                  Vaccines, General Medicines, and Consumer Healthcare. We aim
-                  to become a leading company in immunology and positively
-                  impact millions of patients suffering from dermatological,
-                  respiratory, gastroenterological, and other immune-mediated
-                  diseases. a
-                </span>
-                We earn every day our leadership in prevention by protecting
-                half a billion people worldwide every year with our portfolio of
-                vaccines and by leveraging our broad set of technology and
-                manufacturing platforms, including in mRNA.
-              </p>
-            </div>
-            <div className="h-[50vh] lg:w-[45%] px-5">
-              <img
-                src="https://www.sanofi.com/optim/dotcom/pages/images/our-company/our-strategy/transforming-the-practice-of-medicine_20230505132637.jpg?size=large"
-                alt="image"
-                className="rounded-lg"
-              />
-            </div>
-          </div>
-          <div className="lg:flex items-center justify-around">
-            <div className="h-fit lg:w-[45%] px-5">
-              <img
-                src="https://www.sanofi.com/optim/dotcom/pages/images/our-company/our-strategy/advancing-breakthrough-science2_20230505133020.jpg?size=large"
-                alt="image"
-                className="rounded-lg"
-              />
-            </div>
-            <div className="h-[50vh] lg:w-[40%] px-5">
-              <h1 className="text-5xl mb-4">Advancing Breakthrough Science</h1>
-              <p>
-                We’re strengthening our pipeline with a steady stream of
-                potentially transformative therapies that could shift paradigms
-                in treatment and prevention for people across the world. We have
-                a powerful toolbox of drug discovery platforms that allow us to
-                break scientific ground in six therapeutic areas: Immunology and
-                Inflammation, Oncology, Rare Diseases, Rare Blood Disorders,
-                Neurology and Vaccines.
-              </p>
-            </div>
-          </div>
-          <div className="lg:flex items-center justify-around">
-            <div className="h-fit lg:w-[40%] px-5">
-              <h1 className="text-5xl mb-4">Driving Social Impact</h1>
-              <p>
-                The challenges facing society and the planet are becoming
-                increasingly more complex. Shifting demographics, persistent
-                inequalities in access to healthcare, and accelerating threats
-                from climate change have motivated us to expand our commitments
-                to society. Our social impact strategy is differentiated from
-                our peers, multi-faceted and embedded at all levels of our
-                organization. We aim to have a transformative and sustainable
-                impact on the health and well-being of people, vulnerable
-                communities, our employees, and the planet.
-              </p>
-            </div>
-            <div className="h-fit lg:w-[45%] px-5">
-              <img
-                src="https://www.sanofi.com/optim/dotcom/pages/images/our-company/our-strategy/social-impact-banner_20230620144505.jpg?size=large"
-                alt="image"
-                className="rounded-lg"
-              />
-            </div>
-          </div>
-          <div className="lg:flex items-center justify-around">
-            <div className="h-[50vh] lg:w-[45%] px-5">
-              <img
-                src="https://www.sanofi.com/optim/dotcom/pages/images/our-company/our-strategy/raimunda-rosario_20230502123405.jpg?size=large"
-                alt="image"
-                className="rounded-lg"
-              />
-            </div>
-            <div className="h-fit lg:w-[40%] mb-16 px-5">
-              <h1 className="text-5xl mb-4">Going “All in” For Diversity, Equity and Inclusion</h1>
-              <p>
-              We’re taking steps to build representative leadership and creating a work environment where people can bring their best and whole selves.  
-              </p>
-              <p>
-              Beyond the workplace, we’re advancing further diversity in our clinical trials, and with our suppliers. Our Diversity, Equity and Inclusion Board composed of external thought leaders and Executives ensures we stay true to our long-term commitments in this area.  
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+import { Button } from "../components/ui/button"
+import { PlayCircle } from "lucide-react"
 
-export default About;
+export default function About() {
+  return (
+    (<div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section
+        className="bg-gradient-to-br from-green-50 to-white">
+        <div className="container mx-auto px-4 py-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              {/* Green Circle Decorations */}
+              <div
+                className="absolute -left-20 -top-20 w-64 h-64 rounded-full bg-green-500/20" />
+              <div
+                className="absolute -right-10 bottom-0 w-32 h-32 rounded-full bg-green-400/20" />
+              
+              <div className="relative">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                  We are all in for <br />
+                  <span className="text-green-600">better health.</span>
+                </h1>
+                <p className="text-lg text-gray-600 mb-8 max-w-lg">
+                  At Healthix Life, we're committed to providing accessible, quality healthcare solutions that enhance lives and build healthier communities.
+                </p>
+                <Button className="bg-green-600 hover:bg-green-700">
+                  Learn More
+                </Button>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <div className="rounded-full overflow-hidden aspect-square">
+                <img
+                  src="https://www.robynmariecoaching.com/wp-content/uploads/2023/05/unsplash-image-Ianw4RdVuoo-1024x600.jpg"
+                  alt="Happy family enjoying outdoor activities"
+                  className="w-full h-full object-cover\" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Mission Statement Section */}
+      <section className="bg-gradient-to-r from-green-600 to-green-500 text-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl lg:text-3xl font-semibold mb-6">
+              At Healthix Life we believe that everyone should have access to
+              <span className="font-bold"> quality healthcare</span> that helps manage disease, fights infection, or simply improves overall health.
+            </h2>
+          </div>
+        </div>
+      </section>
+      {/* Features Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-semibold text-gray-900">
+                For more than a decade, patients, caregivers and healthcare providers have trusted Healthix Life
+              </h3>
+              <p className="text-gray-600">
+                As the leading healthcare solutions provider, we offer comprehensive care that puts patients first. Our network of qualified professionals ensures you receive the attention and treatment you deserve.
+              </p>
+              <ul className="space-y-4">
+                {[
+                  "24/7 Professional Support",
+                  "Qualified Healthcare Providers",
+                  "Modern Medical Facilities",
+                  "Patient-Centered Approach"
+                ].map((feature) => (
+                  <li key={feature} className="flex items-center">
+                    <div className="w-2 h-2 rounded-full bg-green-500 mr-3" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="relative">
+              <div className="rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
+                <img
+                  src="https://media.licdn.com/dms/image/v2/C4D12AQGO8YbuGniWzA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520128660733?e=1740614400&v=beta&t=gqDiM3lCaaZUOOhA0K88RBhIjMDV2vF623X6ZjQRqvo"
+                  alt="Healthcare professional with patient"
+                  className="w-full h-full object-cover" />
+              </div>
+              <div
+                className="absolute -bottom-6 -left-6 w-32 h-32 rounded-full bg-green-100" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Quality Care Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">
+              Ensuring Access to Quality Healthcare
+            </h2>
+            <p className="text-gray-600">
+              We're dedicated to making healthcare accessible to everyone through our network of facilities and healthcare professionals.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="relative group cursor-pointer">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src="https://shradhanursing.com/wp-content/uploads/2021/06/Elder-Care.png"
+                  alt="Senior patient consultation"
+                  className="w-full transition duration-300 group-hover:scale-105" />
+              </div>
+              
+            </div>
+            <div className="relative group cursor-pointer">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src="https://proptechos.com/wp-content/uploads/2024/06/The-role-of-healthcare-facilities-management-in-modern-society-ProptechOS.webp"
+                  alt="Modern healthcare facility"
+                  className="w-full transition duration-300 group-hover:scale-105" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>)
+  );
+}

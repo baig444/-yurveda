@@ -13,36 +13,41 @@ import Cart from "./components/Cart";
 import Diabetes from "./pages/Diabetes";
 import Enquiry from "./pages/Enquiry";
 import { FaWhatsapp } from "react-icons/fa";
+import Navbar from "./components/Navbar";
+import Impact from "./components/Impact";
+import ProtectingPlanet from "./components/protecting-planet";
+import BusinessEthics from "./components/business-ethics";
+import Purpose from "./pages/Purpose";
+import Career from "./components/career-page";
+import EconomicImpact from "./components/economic-impact";
 // import LocomotiveScroll from 'locomotive-scroll';
 
 const App = () => {
-  // const scroll = new LocomotiveScroll()
-  // useEffect(() => {
-  //   const script = document.createElement('script');
-  //   script.src = "//code.tidio.co/sfacng6lfmrcyxanw5idjrzynk8rc4wc.js"; // Replace with your actual Tidio script URL
-  //   script.async = true;
-  //   script.onload = () => console.log('Tidio script loaded successfully');
-  //   script.onerror = () => console.error('Failed to load Tidio script');
-  //   document.body.appendChild(script);
-  // }, []);
   return (
-    <div className="w-full">
+    <div className="relative w-full">
       {/* <div className="circle"></div> */}
       <Cart />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/company" element={<About />} />
         <Route path="/register" element={<Register />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/medicines" element={<Shop />} />
+        <Route path="/productfocus" element={<Shop />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/success" element={<OrderConfirm />} />
-        <Route path="medicines/diabetes" element={<Diabetes />} />
+        <Route path="company/values" element={<Diabetes />} />
         <Route path="/enquiry" element={<Enquiry />} />
+        <Route path="/impact" element={<Impact />} />
+        <Route path="/protectingplanet" element={<ProtectingPlanet />} />
+        <Route path="/ethics" element={<BusinessEthics />} />
+        <Route path="company/purpose" element={<Purpose />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/economic-impact" element={<EconomicImpact />} />
       </Routes>
       <a
         href="https://wa.me/9311776514"

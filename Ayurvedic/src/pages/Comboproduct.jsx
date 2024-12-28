@@ -14,11 +14,12 @@ const Comboproduct = () => {
         <h1 className="text-4xl font-extrabold">Featured Products</h1>
         <p className="text-xs">Visit our shop to see amazing products</p>
       </div>
-      <div className="h-fit flex justify-evenly flex-wrap w-full">
-        {saman.map((product) => (
+      <Link to={'/productfocus'} className="underline px-5">View all products</Link>
+      <div className="h-auto grid grid-cols-4 flex-wrap w-full">
+        {saman.slice(0,4).map((product) => (
           <div
             key={product.id}
-            className="bg-white h-[80%] shadow-lg border-2 hover:shadow-gray-400 transition-all rounded-lg p-4 m-4 w-72 flex flex-col"
+            className="bg-white h-[90%] shadow-lg border-2 hover:shadow-gray-400 transition-all rounded-lg p-4 m-4 w-72 flex flex-col"
           >
             <img
               src={product.imageUrl}
@@ -34,8 +35,7 @@ const Comboproduct = () => {
                 </p>
                 <span>₹{product.originalPrice}</span> */}
               </div>
-            </div>
-            <button
+              <button
               // onClick={() => {
               //   addToCart(product);
               //   setActiveCart(!activeCart);
@@ -46,6 +46,8 @@ const Comboproduct = () => {
                 Enquire Now
                 </Link>
             </button>
+            </div>
+            
           </div>
         ))}
       </div>

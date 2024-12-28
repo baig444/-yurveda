@@ -9,8 +9,9 @@ const Deals = () => {
         <h1 className="text-4xl font-extrabold">Deals of the Day</h1>
         <p className="text-xs">Visit our shop to see amazing products</p>
       </div>
-      <div className="flex flex-wrap justify-evenly gap-4">
-        {saman.map((product) => (
+      <Link to={'/productfocus'} className="underline px-10">View all products</Link>
+      <div className="flex flex-wrap justify-evenly gap-4 mt-5">
+        {saman.slice(0,3).map((product) => (
           <Link
             to={`/product/${product.id}`}
             key={product.id}

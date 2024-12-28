@@ -2,6 +2,14 @@
   font-family: 'matter';
   src: url('/matter-regular.woff2');
 }
+@font-face {
+  font-family: 'GT';
+  src: url('/GT.woff2');
+}
+@font-face {
+  font-family: 'Apercu';
+  src: url('/Apercu.ttf') format('truetype');
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +18,7 @@
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  font-family: 'matter';
+  font-family: 'GT', sans-serif;
 }
 
 .nav-link:hover {

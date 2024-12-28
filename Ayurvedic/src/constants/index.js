@@ -85,30 +85,6 @@ const images = [
 
 const saman = [
     {
-        id: 1,
-        name: 'CORE HEALTH GARCINIA COMBODIGA',
-        description: 'Weight Loss',
-        price: 2999,
-        originalPrice: 1999,
-        imageUrl: 'https://corehealthandwellness.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-07-22-at-4.36.36-PM-2-300x225.jpeg',
-    },
-    {
-        id: 2,
-        name: 'CORE HEALTH LIV 360 CARE DOUBLE PROTECTOR',
-        description: 'Current price is: ₹1,999.00.Holistic Liver Support: Crafted with Ayurvedic wisdom, CORE HEALTH LIV 360 CARE DOUBLE PROTECTOR offers…',
-        price: 2999,
-        originalPrice: 1999,
-        imageUrl: 'https://corehealthandwellness.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-07-22-at-4.36.36-PM.jpeg',
-    },
-    {
-        id: 3,
-        name: 'CORE HEALTH KETO + BODY IN SHAPE',
-        description: 'Current price is: ₹1,999.00.Holistic Liver Support: Crafted with Ayurvedic wisdom, CORE HEALTH KETO + BODY IN SHAPE offers…',
-        price: 2999,
-        originalPrice: 1999,
-        imageUrl: 'https://corehealthandwellness.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-07-22-at-4.36.36-PM-1-300x224.jpeg',
-    },
-    {
         id: 4,
         name: 'Dapavista-10',
         description: 'Each film coated tablet contains: Dapagliflozin Propanediol Monohydrate equivalent to Dapagliflozin 10 mgExcipients q.s.Colours: Titanium Dioxide IP & Iron Oxide Yellow ',
@@ -201,9 +177,24 @@ const saman = [
 
 const  navLinks = [
   { name: 'Home', link: '/' , icon:'./home.svg' },
-  { name: 'Our Company', link: '/about', icon:'./about.svg' },
-  { name: 'Medicines', link: '/medicines', icon:'./shop.svg' },
-  { name: 'Testimonials', link: '/testimonials', icon:'./testimonials.svg' },
+  { name: 'Our Company', link: '/company',
+     dropdownItems: [
+    { name: "Values", link: "/company/values" },
+    { name: "Purpose", link: "/company/purpose" },
+    { name: "Download Brochure", link: "/company/brochure" },
+  ],  icon:'./about.svg' },
+  { name: 'Our impact', link: '/impact',
+    dropdownItems: [
+      { name: "Protecting our planet", link: "/protectingplanet" },
+      { name: "Ethics", link: "/ethics" },
+      { name: "Economic impact", link: "/economic-impact" },
+    ],
+    icon:'./shop.svg' },
+  { name: 'Product focus', link: '/productfocus', icon:'./shop.svg' },
+ 
+  { name: 'Career', link: '/career', icon:'./shop.svg' },
+
+  // { name: 'Testimonials', link: '/testimonials', icon:'./testimonials.svg' },
   { name: 'Contact', link: '/contact', icon:'./contact.svg' },
 ];
 
